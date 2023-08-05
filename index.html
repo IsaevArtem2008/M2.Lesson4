@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа к занятию 4 (Модуль 2)</title>
+</head>
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<script>
+    var quotes = ['Если вы хотите, чтобы код было легко и быстро писать — делайте его удобным для чтения', 
+    'Неработающая программа обычно приносит меньше вреда, чем работающая плохо', 'Помните, что обычно есть решение проще и быстрее того, что первым приходит вам в голову'];
+    function isWork(){
+        alert("Работает. Не трогай!");
+    }
+    
+    function showQuote(){
+        for (var i = 0; i < quotes.length; i++) {
+            alert(quotes[i]);
+        }
+    }
+</script>
+<body>
+    <div>
+        <input value="Работает?" type="button" onclick="isWork()">
+        <input value="Хм..." type="button" onclick="showQuote()">
+    </div>
+</body>
+</html>
